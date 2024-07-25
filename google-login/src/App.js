@@ -2,7 +2,8 @@ import React from 'react';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import './App.css';
 
-const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;            //If you change any permissions needed in the security group it will take around an hour to apply the changes for the client id
+                                                                    //Also this applies for any test accounts that you add on the Google console website
 
 function App() {
   const handleLoginSuccess = (response) => {
